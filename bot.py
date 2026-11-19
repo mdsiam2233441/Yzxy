@@ -28,8 +28,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name
 log = logging.getLogger("ottbot")
 
 # ───────────────────────── Config ─────────────────────────
-TOKEN = os.environ["BOT_TOKEN"]
-ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "").split(",") if x.strip()}
+TOKEN = os.environ["8535271767:AAEk8u7aEZ9MBLyWtE2uvPKQ9nj_U0itAuA"]
+ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "1686274364").split(",") if x.strip()}
 SUPPORT_URL = os.getenv("SUPPORT_URL", "https://t.me/your_support_group")
 UPDATE_URL = os.getenv("UPDATE_CHANNEL_URL", "https://t.me/your_update_channel")
 CONTACT_URL = os.getenv("CONTACT_URL", "https://t.me/your_admin_username")
