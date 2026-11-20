@@ -45,18 +45,18 @@ def load_env():
 
 
 load_env()
-TOKEN = os.getenv("BOT_TOKEN", "").strip()
+TOKEN = os.getenv("BOT_TOKEN", "8535271767:AAFvLDaC-jdr860ra6LGl6f-TCjs0EnSvmI").strip()
 if ":" not in TOKEN:
     sys.exit(
         "\n❌ BOT_TOKEN পাওয়া যায়নি বা ভুল।\n"
         "   bot.py যে ফোল্ডারে আছে সেখানে '.env' নামে ফাইল বানান (.env.example নয়) এবং লিখুন:\n"
         "   BOT_TOKEN=123456789:AAH-your-token\n"
     )
-ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "").replace(" ", "").split(",") if x.strip().isdigit()}
-SUPPORT_URL = os.getenv("SUPPORT_URL", "https://t.me/telegram")
-UPDATE_URL = os.getenv("UPDATE_CHANNEL_URL", "https://t.me/telegram")
-CONTACT_URL = os.getenv("CONTACT_URL", "https://t.me/telegram")
-PAY_INFO = os.getenv("PAY_INFO", "bKash / Nagad: 01XXXXXXXXX (Send Money)")
+ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "1686274364").replace(" ", "").split(",") if x.strip().isdigit()}
+SUPPORT_URL = os.getenv("SUPPORT_URL", "https://t.me/updatechannle1")
+UPDATE_URL = os.getenv("UPDATE_CHANNEL_URL", "https://t.me/updatechannle1")
+CONTACT_URL = os.getenv("CONTACT_URL", "https://t.me/skrbd223311")
+PAY_INFO = os.getenv("PAY_INFO", "bKash / Nagad: 01623121880 (Send Money)")
 POLL_SECONDS = int(os.getenv("POLL_SECONDS", "60"))
 USE_STYLE = os.getenv("BUTTON_STYLE", "1") == "1"  # colored buttons on supporting clients
 API = os.getenv("API_BASE", "https://api.telegram.org").rstrip("/") + f"/bot{TOKEN}/"
